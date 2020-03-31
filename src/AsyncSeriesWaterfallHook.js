@@ -1,6 +1,8 @@
 //start.js(原生的异步钩子)
 // let { AsyncSeriesWaterfallHook } = require('tapable');
-let { AsyncSeriesWaterfallHook } = require('../lib/AsyncSeriesWaterfallHook');
+// let { AsyncSeriesWaterfallHook } = require('../lib/AsyncSeriesWaterfallHook');
+import { AsyncSeriesWaterfallHook } from '../lib/AsyncSeriesWaterfallHook';
+
 
 // 异步的钩子
 // 同时发送多个请求
@@ -28,7 +30,7 @@ class Lesson {
     this.hooks.arch.tapAsync('node', (data, cb) => {
       setTimeout(() => {
         console.log('node', data);
-        cb(null, 'node');;  // 如果某个异步没有执行cb，那么永远不会执行后边的end
+        cb(null, 'node');  // 如果某个异步没有执行cb，那么永远不会执行后边的end
       }, 1000);
     });
 

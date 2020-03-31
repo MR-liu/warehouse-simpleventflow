@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 //start.js(原生的异步钩子)
 // let { AsyncParallelHook } = require('tapable');
-let { AsyncParallelHook } = require('../lib/AsyncParallelHookPromise');
+// let { AsyncParallelHook } = require('../lib/AsyncParallelHookPromise');
+import { AsyncParallelHookPromise } from '../lib/AsyncParallelHookPromise';
 
 // 异步的钩子
 // 同时发送多个请求
@@ -28,7 +30,7 @@ class Lesson {
   constructor() {
     this.index = 0;
     this.hooks = {
-      arch: new AsyncParallelHook(['name']) //此处的“name”,只是为了方便开发者阅读，语义化
+      arch: new AsyncParallelHookPromise(['name']) //此处的“name”,只是为了方便开发者阅读，语义化
     };
   }
   tap() {

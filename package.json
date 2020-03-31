@@ -1,8 +1,8 @@
 {
   "name": "warehouse-simpleventflow",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This is a code base for simple event flow management",
-  "main": ".build/index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run release",

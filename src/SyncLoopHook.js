@@ -1,5 +1,6 @@
 // const { SyncBailHook } = require('tapable');
-const { SyncLoopHook } = require('../lib/SyncLoopHook');
+// const { SyncLoopHook } = require('../lib/SyncLoopHook');
+import { SyncLoopHook } from '../lib/SyncLoopHook';
 
 class leason {
   constructor() {

@@ -1,6 +1,7 @@
 //start.js(原生的异步钩子)
 // let { AsyncSeriesHook } = require('tapable');
-let { AsyncSeriesHook } = require('../lib/AsyncSeriesHook');
+// let { AsyncSeriesHook } = require('../lib/AsyncSeriesHook');
+import { AsyncSeriesHook } from '../lib/AsyncSeriesHook';
 
 // 异步的钩子
 // 同时发送多个请求

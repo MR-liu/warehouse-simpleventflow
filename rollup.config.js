@@ -20,7 +20,7 @@ const env = process.env.NODE_ENV;
 export default {
   input: "lib/index.js",
   output: {
-    dir: ".build",
+    dir: "build",
     format: "cjs",
     sourcemap: true,
     exports: "named"
@@ -28,7 +28,7 @@ export default {
   //告诉rollup不要将此lodash打包，而作为外部依赖
   external: ["react", "lodash", "antd"],
   // 是否开启代码分割
-  experimentalCodeSplitting: true,
+  // experimentalCodeSplitting: true,
   plugins: [
     postcss({
       extensions: [".pcss", ".less", ".css"],

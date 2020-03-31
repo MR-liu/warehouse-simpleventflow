@@ -1,6 +1,7 @@
 //start.js(原生的异步钩子)
 // let { AsyncParallelHook } = require('tapable');
-let { AsyncParallelHook } = require('../lib/AsyncParallelHook');
+// let { AsyncParallelHook } = require('../lib/AsyncParallelHook');
+let { AsyncParallelHook } = require('../build/index');
 
 // 异步的钩子
 // 同时发送多个请求

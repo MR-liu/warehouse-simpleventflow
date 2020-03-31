@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 //start.js(原生的异步钩子)
 // let { AsyncSeriesHook } = require('tapable');
-let { AsyncSeriesHook } = require('../lib/AsyncSeriesHookPromise');
+// let { AsyncSeriesHook } = require('../lib/AsyncSeriesHookPromise');
+import { AsyncSeriesHookPromise } from '../lib/AsyncSeriesHookPromise';
 
 // 异步的钩子
 // 同时发送多个请求
@@ -13,7 +15,7 @@ class Lesson {
   constructor() {
     this.index = 0;
     this.hooks = {
-      arch: new AsyncSeriesHook(['name']) //此处的“name”,只是为了方便开发者阅读，语义化
+      arch: new AsyncSeriesHookPromise(['name']) //此处的“name”,只是为了方便开发者阅读，语义化
     };
   }
   tap() {
